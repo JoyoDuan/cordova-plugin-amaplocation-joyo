@@ -1,9 +1,9 @@
 var exec = require('cordova/exec');
 
-function AMapLocationPlugin(){}
+function AMapLocation(){}
 
-AMapLocationPlugin.prototype.getLocation = function(successCallback, errorCallback) {
+AMapLocation.prototype.getLocation = function(successCallback, errorCallback) {
 	exec(successCallback, errorCallback, "AMapLocationPlugin", "getLocation", []);
 }
 
-module.exports = new AMapLocationPlugin();
+module.exports = new AMapLocation();
