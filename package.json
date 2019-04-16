@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-amaplocation-joyo",
+  "version": "0.0.1",
+  "description": "Cordova AMapLocationPlugin Plugin Powerd by JoyoDuan",
+  "cordova": {
+    "id": "cordova-plugin-amaplocation-joyo",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cordova",
+    "AMapLocationPlugin",
+    "JoyoDuan",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "JoyoDuan",
+  "license": "Apache 2.0"
+}
