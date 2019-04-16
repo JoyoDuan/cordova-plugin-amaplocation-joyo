@@ -10,7 +10,7 @@
 
     <!-- 对外js调用 name对应js文件中的原型 target对应js文件中的调用class -->
     <js-module name="AMapLocationPlugin" src="www/amap-location.js">
-        <clobbers target="AMapLocationPlugin"></clobbers>
+        <clobbers target="AMapLocation"></clobbers>
     </js-module>
 
     <!-- android -->
