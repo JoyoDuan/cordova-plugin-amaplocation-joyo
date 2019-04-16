@@ -8,8 +8,9 @@
     <license>Apache 2.0</license>
     <keywords>cordova, AMapLocationPlugin, JoyoDuan</keywords>
 
-    <!-- 对外js调用 name对应js文件中的原型 target对应js文件中的调用class -->
+    <!-- 对外js调用-->
     <js-module name="AMapLocationPlugin" src="www/amap-location.js">
+        <!-- target对应js中module.exports的原型对象，这里默认会注册到windows对象中，即AMapLocation.getLocation 和 window.AMapLocation.getLocation都可以 -->
         <clobbers target="AMapLocation"></clobbers>
     </js-module>
 
