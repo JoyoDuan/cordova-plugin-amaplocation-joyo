@@ -20,7 +20,7 @@ static NSString* const LONGITUDE_KEY = @"longitude";
     int interval;
 }
 
-- (void)getlocation:(CDVInvokedUrlCommand*)command;
+- (void)getLocation:(CDVInvokedUrlCommand*)command;
 
 - (CLLocationCoordinate2D)transformFromWGSToGCJ:(CLLocationCoordinate2D) wgLoc;
 - (CLLocationCoordinate2D)bd_encrypt:(CLLocationCoordinate2D)gcLoc;
@@ -30,7 +30,7 @@ static NSString* const LONGITUDE_KEY = @"longitude";
 
 @implementation AMapLocationPlugin
 
-- (void)getlocation:(CDVInvokedUrlCommand*)command{
+- (void)getLocation:(CDVInvokedUrlCommand*)command{
     callbackId = command.callbackId;
     if(curLocationManager == nil){
         curLocationManager = [[CLLocationManager alloc] init];
