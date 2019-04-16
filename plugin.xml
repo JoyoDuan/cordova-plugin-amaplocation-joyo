@@ -8,7 +8,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova, AMapLocationPlugin, JoyoDuan</keywords>
 
-    <!-- 对外js调用-->
+    <!-- 对外js调用 name一般对应js对用native的类名-->
     <js-module name="AMapLocationPlugin" src="www/amap-location.js">
         <!-- target对应js中module.exports的原型对象，这里默认会注册到windows对象中，即AMapLocation.getLocation 和 window.AMapLocation.getLocation都可以 -->
         <clobbers target="AMapLocation"></clobbers>
@@ -19,6 +19,7 @@
         <!-- 加了preference后，add plugin 时要跟variable参数 -->
         <preference name="KEY" default="" />
         <config-file parent="/*" target="res/xml/config.xml">
+            <!-- name一般对应js对用native的类名 -->
             <feature name="AMapLocationPlugin">
                 <param name="android-package" value="com.joyo.cordova.location.AMapLocationPlugin">
                 </param>
@@ -66,6 +67,7 @@
     <!-- ios -->
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
+            <!-- name一般对应js对用native的类名 -->
             <feature name="AMapLocationPlugin">
                 <param name="ios-package" value="AMapLocationPlugin"/>
             </feature>
